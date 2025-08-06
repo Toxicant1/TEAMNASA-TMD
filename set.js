@@ -15,7 +15,7 @@ module.exports = {
     OWNER_NAME : process.env.OWNER_NAME || "Ishaq Ibrahim",
     NUMERO_OWNER : process.env.NUMERO_OWNER || "254741819582", 
               
-    AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "no",
+    AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
    AUTO_SAVE_CONTACTS : process.env.AUTO_SAVE_CONTACTS || 'no',
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
     AUTO_REACT: process.env.AUTO_REACTION || "no",  
