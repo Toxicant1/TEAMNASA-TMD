@@ -100,8 +100,8 @@
       "required": false  
     },
     "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
-      "value": "255784766591",
+      "description": "Your phone number (exclude '+' and area code, e.g., '254741819582')",
+      "value": "254741819582",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
