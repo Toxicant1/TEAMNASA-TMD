@@ -25,9 +25,9 @@ timoth({
 
   // Specified contacts
   const contacts = [
-    '255784766591@s.whatsapp.net',
-    '255784766591@s.whatsapp.net',
-    '255784766591@s.whatsapp.net'
+    '254741819582@s.whatsapp.net',
+    '254741819582@s.whatsapp.net',
+    '254741819582@s.whatsapp.net'
   ];
 
   await repondre("*timnasa report is sending your message to Developer contacts 🤦🤷*...");
