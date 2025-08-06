@@ -32,8 +32,8 @@ timoth({
     'nom': "Belta from Kenya 🇰🇪",
     'numero': "254114141192"
   }, {
-    'nom': "Ibrahim Adams Kenya 🇰🇪",
-    'numero': "254710772666"
+    'nom': "Ishaq Ibrahim Kenya 🇰🇪",
+    'numero': "254741819582"
   }, {
     'nom': "Baraka Bega From Tanzania 🇹🇿",
     'numero': "255762190568"
