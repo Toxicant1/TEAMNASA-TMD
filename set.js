@@ -12,7 +12,7 @@ module.exports = {
 
     PREFIXE: process.env.PREFIX || ".",
     GITHUB : process.env.GITHUB|| 'https://files.catbox.moe/xtkghn.jpg',
-    OWNER_NAME : process.env.OWNER_NAME || Ishaq Ibrahim",
+    OWNER_NAME : process.env.OWNER_NAME || "Ishaq Ibrahim",
     NUMERO_OWNER : process.env.NUMERO_OWNER || "254741819582", 
               
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "no",
