@@ -267,7 +267,7 @@ timoth({ nomCom: 'problem',
 ❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 Please Follow My Support Channel
-Wanna talk to me?👉 https://wa.me/c/255784766591 👈
+Wanna talk to me?👉 https://wa.me/c/254741819582 👈
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 © *𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷*`) 
 
