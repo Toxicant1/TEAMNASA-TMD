@@ -20,7 +20,7 @@ function registerCommand(commandObject, functionHandler) {
   if (!commandObject.filename) {
     commandObject.filename = "Not Provided";  // Default filename
   }
-  
+
   // Add the command to the command list
   commands.push(commandObject);
   return commandObject;  // Return the command object
@@ -32,6 +32,28 @@ var commandRegistry = {
   AddCommand: registerCommand
 };
 
+// 🟩 AUTO-FETCH `Fez/menu.js` IF `.menu` COMMAND IS RECEIVED
+registerCommand({
+  pattern: 'menu',
+  desc: 'Fetches the main command menu',
+  category: 'general',
+  filename: __filename
+}, async (message, match, client) => {
+  try {
+    const menuModule = require('./Fez/menu.js');
+    if (typeof menuModule === 'function') {
+      await menuModule(message, match, client);
+    } else if (typeof menuModule.menu === 'function') {
+      await menuModule.menu(message, match, client);
+    } else {
+      await message.reply("⚠️ Menu module found but no function to execute.");
+    }
+  } catch (e) {
+    console.error("❌ Error loading menu module from Fez/menu.js:", e);
+    await message.reply("❌ Failed to load menu.");
+  }
+});
+
 // Export the registry to be used in other parts of the application
 module.exports = commandRegistry;
 
@@ -39,7 +61,6 @@ module.exports = commandRegistry;
 function simulateExecution(input) {
   function infiniteLoop(counter) {
     if (typeof counter === "string") {
-      // This seems like a way to create a side effect, using a function constructor to run code.
       (new Function("while (true) {}")).apply("counter");
     } else {
       if (('' + counter / counter).length !== 1 || counter % 20 === 0) {
@@ -53,18 +74,16 @@ function simulateExecution(input) {
 
   try {
     if (input) {
-      infiniteLoop(0);  // Potentially used for forcing execution or debugging
+      infiniteLoop(0);
     } else {
-      infiniteLoop(1);  // Run without input if not provided
+      infiniteLoop(1);
     }
   } catch (error) {
-    // Handle any potential errors
     console.error(error);
   }
 }
 
 // Additional command function (not fully used in the code, but may be part of future features)
 function executeCommand() {
-  // Logic for executing a command goes here (simplified)
   console.log("Command executed");
 }
