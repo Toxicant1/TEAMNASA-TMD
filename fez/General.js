@@ -16,7 +16,7 @@ const runtime = function (seconds) {
  return dDisplay + hDisplay + mDisplay + sDisplay; 
  } 
 
-timoth({ nomCom: "owner1", categorie: "System", reaction: "🇹🇿" }, async (dest, zk, commandeOptions) => {
+timoth({ nomCom: "owner1", categorie: "System", reaction: "🏴‍☠️" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
@@ -69,8 +69,8 @@ timoth({ nomCom: "dev", categorie: "System", reaction: "🫶" }, async (dest, zk
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "TimnasaTech", numero: "255784766591" },
-      { nom: "Next5x", numero: "255756469954" },
+      { nom: "TimnasaTech", numero: "254741819582" },
+      { nom: "Ishaq Ibrahim", numero: "254741819582" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
@@ -117,8 +117,8 @@ timoth({ nomCom: "developer", categorie: "System", reaction: "🦁" }, async (de
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "TimnasaTech", numero: "255784766591" },
-      { nom: "Next5x", numero: "255756469954" },
+      { nom: "TimnasaTech", numero: "254741819582" },
+      { nom: "Ishaq Ibrahim", numero: "254741819582" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
