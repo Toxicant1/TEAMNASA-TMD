@@ -18,7 +18,7 @@ module.exports = {
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
    AUTO_SAVE_CONTACTS : process.env.AUTO_SAVE_CONTACTS || 'no',
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
-    AUTO_REACT: process.env.AUTO_REACTION || "yes",  
+    AUTO_REACT: process.env.AUTO_REACTION || "no",  
     URL: process.env.URL || "https://files.catbox.moe/xtkghn.jpg",  
     AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || 'non',              
     CHAT_BOT: process.env.CHAT_BOT || "no",
