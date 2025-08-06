@@ -22,7 +22,7 @@ module.exports = {
     URL: process.env.URL || "https://files.catbox.moe/xtkghn.jpg",  
     AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || 'non',              
     CHAT_BOT: process.env.CHAT_BOT || "yes",
-    AUDIO_REPLY: process.env.AUDIO_REPLY || "yes",
+    AUDIO_REPLY: process.env.AUDIO_REPLY || "no",
     AUTO_READ_MESSAGES: process.env.AUTO_READ_MESSAGES || "yes",
     AUTO_BLOCK: process.env.AUTO_BLOCK || 'no', 
     GCF: process.env.GROUP_HANDLE || 'no', 
