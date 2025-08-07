@@ -91,9 +91,6 @@ _(Use this only for viewing, always clone official repo)_
 
 📞 Phone: [+254741819582](https://wa.me/254741819582)  
 📸 Instagram: [@toxic.a.n.t](https://instagram.com/toxic.a.n.t)
-
-📱 WhatsApp: [Click to Message](https://wa.me/254741819582)  
-📸 Instagram: [@toxic.a.n.t](https://instagram.com/toxic.a.n.t)  
 📁 GitHub: [Toxicant1](https://github.com/Toxicant1)
 
 ---
