@@ -7,6 +7,7 @@
 
 <p align="center">
   ☉︎ <strong>𝚃𝙴𝙰𝙼 𝙽𝙰𝚂𝙰 𝚃𝙼𝙳</strong> ☉︎
+<img src="https://github.com/Toxicant1/TIMNASA_TMD1/blob/main/media/lyrics-img.jpg?raw=true" alt="Lyrics" width="600"/>
 </p>
 
 <!-- Glowing Footer -->
