@@ -36,11 +36,12 @@ _(Use this only for viewing, always clone official repo)_
 
 ---
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/Readme.png" alt="TIMNASA Intro" width="600"/>
+  <a href="https://github.com/Toxicant1">
+    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=30&duration=4000&pause=1000&color=F7C618&width=800&lines=🚀+WELCOME+TO+TEAMNASA+TMD" alt="Typing SVG">
+  </a>
 </p>
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=30&pause=1000&color=F7C618&center=true&vCenter=true&width=900&height=80&lines=🚀+WELCOME+TO+TEAMNASA+TMD" alt="Welcome to TeamNASA" />
-</p>
+  <img src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/Readme.png" alt="TIMNASA Intro" width="600"/>
 
 <!-- Glowing Footer -->
 <p align="center">
