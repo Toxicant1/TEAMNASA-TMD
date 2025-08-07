@@ -85,11 +85,12 @@ _(Use this only for viewing, always clone official repo)_
 
 ---
 
-<h2 align="center">👨‍💻 DEV CONTACTS</h2>
+## 👨‍💻 DEV CONTACTS
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=28&pause=1000&color=F7C618&center=true&vCenter=true&width=900&height=80&lines=👨‍💻+Ishaq+Ibrahim+-+Bot+Developer;📞+Phone:+254741819582;📸+Instagram:+toxic.a.n.t" alt="Typing SVG" />
-</p>
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&size=28&pause=1000&color=F7C618&center=true&vCenter=true&width=900&height=80&lines=👨‍💻+Ishaq+Ibrahim+-+Bot+Developer;📞+Phone:+254741819582;📸+Instagram:+toxic.a.n.t)
+
+📞 Phone: [+254741819582](https://wa.me/254741819582)  
+📸 Instagram: [@toxic.a.n.t](https://instagram.com/toxic.a.n.t)
 
 📱 WhatsApp: [Click to Message](https://wa.me/254741819582)  
 📸 Instagram: [@toxic.a.n.t](https://instagram.com/toxic.a.n.t)  
