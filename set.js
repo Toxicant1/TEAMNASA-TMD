@@ -34,12 +34,12 @@ module.exports = {
     AUTO_SAVE_CONTACTS: process.env.AUTO_SAVE_CONTACTS || "no",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "no",
     AUTO_REACT: process.env.AUTO_REACTION || "no",
-    AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || "no", // fixed typo
+    AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || "yes", // fixed typo
     AUTO_READ_MESSAGES: process.env.AUTO_READ_MESSAGES || "yes",
     AUTO_BLOCK: process.env.AUTO_BLOCK || "no",
     AUTO_REPLY: process.env.AUTO_REPLY || "no",
     AUTO_STATUS_TEXT: process.env.AUTO_STATUS_TEXT || "viewed by Beltah 🏴‍☠️",
-    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "no",
+    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "yes",
     AUDIO_REPLY: process.env.AUDIO_REPLY || "yes",
     AUTO_BIO: process.env.AUTO_BIO || "yes",
     CHAT_BOT: process.env.CHAT_BOT || "no",
