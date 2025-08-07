@@ -35,19 +35,14 @@ _(Use this only for viewing, always clone official repo)_
 </p>
 
 ---
-
+<!-- Glowing Footer -->
 <p align="center">
-  <a href="https://timnasax-tmd1.onrender.com">
-    <img src="https://img.shields.io/badge/Pair%20session%20code-white" alt="Pair session code" width="300">
-  </a>
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
-
+<!-- Glowing Footer -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Toxicant1&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical" alt="GitHub Stats" width="800">
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Toxicant1&repo=TIMNASA_TMD1" alt="Pinned Repo" width="800">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
-
 ---
 
 <!-- Glowing Footer -->
