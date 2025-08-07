@@ -8,7 +8,12 @@ By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
 📱 Phone: +254741819582
 📸 Instagram: toxic.a.n.t
 
-
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HI+THIS+IS+TEAMNASA-TMD;A+MULTI+DEVICE+WHATSAPP+BOT;SCRIPTED+BY+ISHAQ+IBRAHIM;STAR+AND+FORK+OUR+REPO" alt="Typing SVG" /></a>
+  </p>
 ---
 
 <p align="center">
