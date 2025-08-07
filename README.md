@@ -22,15 +22,7 @@
 </p>
 
 ---
-<p align="center">
-  <a href="https://timnasax-tmd1.onrender.com" target="_blank">
-    <img 
-      src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/lyrics-img.jpg" 
-      alt="Get Session ID" 
-      style="width:350px; border-radius:12px;"
-    />
-  </a>
-</p>
+
 ---
 
 📦 **TAP TO OPEN TIMNASA TMD REPO**  
