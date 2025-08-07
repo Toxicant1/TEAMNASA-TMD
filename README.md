@@ -35,11 +35,7 @@ _(Use this only for viewing, always clone official repo)_
 </p>
 
 ---
-<p align="center">
-  <a href="https://github.com/Toxicant1/TIMNASA_TMD1/raw/main/media/Readme.mp4">
-    <img src="https://i.imgur.com/dBaSKWF.gif" alt="▶️ Watch TIMNASA Intro" width="500"/>
-  </a>
-</p>
+[![TIMNASA Intro](https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/thumbnail.jpg)](https://github.com/Toxicant1/TIMNASA_TMD1/raw/main/media/Readme.mp4)
 ---
 
 <!-- Glowing Footer -->
