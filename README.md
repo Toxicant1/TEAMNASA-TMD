@@ -23,11 +23,7 @@
 
 ---
 
-<p align="center">
-  <a href="https://timnasax-tmd1.onrender.com">
-    <img title="GET-SESSION ID HERE" src="https://img.shields.io/badge/GET-SESSION_ID-HERE-blue?style=for-the-badge&logo=nike" width="320" height="60"/>
-  </a>
-</p>
+[![GET SESSION ID HERE](https://img.shields.io/badge/GET-SESSION_ID-HERE-blue?style=for-the-badge&logo=nike)](https://timnasax-tmd1.onrender.com)
 
 ---
 
