@@ -35,10 +35,7 @@ _(Use this only for viewing, always clone official repo)_
 </p>
 
 ---
-<p align="center">
-  <img src="media/Readme.png" alt="WELCOME TO TEAMNASA TMD" width="600"/>
-</p>
-<p align="center">
+<
   <img src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/Readme.png" alt="TIMNASA Intro" width="600"/>
 
 <!-- Glowing Footer -->
