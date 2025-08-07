@@ -35,7 +35,7 @@ _(Use this only for viewing, always clone official repo)_
 </p>
 
 ---
-<<p align="center">
+<p align="center">
   <a href="https://github.com/Toxicant1/TIMNASA_TMD1/raw/main/media/Readme.mp4">
     <img src="https://github.com/Toxicant1/TIMNASA_TMD1/raw/main/media/Readme-thumb.jpg" alt="Watch TIMNASA Intro" width="600"/>
   </a>
