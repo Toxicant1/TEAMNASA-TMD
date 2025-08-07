@@ -1,18 +1,20 @@
-
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 ---
 
 ☉︎ 𝚃𝙴𝙰𝙼 𝙽𝙰𝚂𝙰 𝚃𝙼𝙳 ☉︎
-
-By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
-
-📱 Phone: +254741819582
-📸 Instagram: toxic.a.n.t
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 
 <!-- Glowing Footer -->
 <p align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
 </p>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HI+THIS+IS+TEAMNASA-TMD;A+MULTI+DEVICE+WHATSAPP+BOT;SCRIPTED+BY+ISHAQ+IBRAHIM;STAR+AND+FORK+OUR+REPO" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HI+THIS+IS+TEAMNASA-TMD;A+MULTI+DEVICE+WHATSAPP+BOT;SCRIPTED+BY+ISHAQ+IBRAHIM;STAR+AND+FORK+REPO" alt="Typing SVG" /></a>
   </p>
 ---
 
@@ -26,7 +28,10 @@ By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
 📦 TAP TO OPEN TIMNASA TMD REPO (Use this only for viewing, always clone official repo)
 
 
-
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 
 ---
 
@@ -39,7 +44,10 @@ By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Toxicant1&repo=TIMNASA_TMD1" alt="Pinned Repo" width="800">
 </p>
 ---
-
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 🔗 USEFUL LINKS
 
 <a href="https://signup.heroku.com/">
@@ -49,7 +57,10 @@ By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
 </a>
 ---
 
-
+<!-- Glowing Footer -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 
 
 ---
@@ -63,14 +74,8 @@ By: 𝑰𝒔𝒉𝒂𝒒 𝑰𝒃𝒓𝒂𝒉𝒊𝒎
 
 👨‍💻 DEV CONTACTS
 
-👤 Developer: 𝑰𝒎𝒑𝒊𝒒 𝑰𝒎𝒗𝒋𝒖𝒎𝒘
-
-☎️ Phone Number: +254741819582
-
-📷 Instagram: toxic.a.n.t
-
-🌐 GitHub: Toxicant1
-
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HI+THIS+IS+TEAMNASA-TMD;THE+OWNER+ACCOUNT+ARE+HERE;Instagram+toxic.a.n.t;📱+Phone+254741819582" alt="Typing SVG" /></a>
+  </p>
 
 
 ---
