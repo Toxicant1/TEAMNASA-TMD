@@ -22,14 +22,12 @@
 </p>
 
 ---
-
 <p align="center">
   <a href="https://timnasax-tmd1.onrender.com" target="_blank">
     <img 
-      src="https://img.shields.io/badge/GET-SESSION_ID-HERE-blue?style=for-the-badge&logo=nike" 
-      alt="GET SESSION ID HERE" 
-      width="320" 
-      height="60"
+      src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/lyrics-img.jpg" 
+      alt="Get Session ID" 
+      style="width:350px; border-radius:12px;"
     />
   </a>
 </p>
