@@ -63,13 +63,15 @@ _(Use this only for viewing, always clone official repo)_
 </p>
 
 ## 🔗 USEFUL LINKS
-
 <p align="center">
   <a href="https://signup.heroku.com/">
     <img title="CREATE ACCOUNT" src="https://img.shields.io/badge/CREATE_ACCOUNT-green?style=for-the-badge&logo=red" width="220" height="50"/>
   </a>
   <a href="https://dashboard.heroku.com/new?template=https://github.com/Toxicant1/TIMNASA_TMD1">
     <img title="DEPLOY TO HEROKU" src="https://img.shields.io/badge/DEPLOY_ON_HEROKU-red?style=for-the-badge&logo=nike" width="250" height="50"/>
+  </a>
+  <a href="https://timnasax-tmd1.onrender.com">
+    <img title="GET SESSION ID" src="https://img.shields.io/badge/GET_SESSION_ID-HERE-blue?style=for-the-badge&logo=whatsapp" width="300" height="55"/>
   </a>
 </p>
 
