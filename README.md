@@ -36,7 +36,7 @@ _(Use this only for viewing, always clone official repo)_
 
 ---
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=30&duration=4000&pause=1000&color=F7C618&center=true&vCenter=true&width=800&height=60&lines=🚀+WELCOME+TO+TEAMNASA+TMD" alt="Welcome Typing SVG">
+  <img src="media/Readme.png" alt="WELCOME TO TEAMNASA TMD" width="600"/>
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Toxicant1/TIMNASA_TMD1/main/media/Readme.png" alt="TIMNASA Intro" width="600"/>
