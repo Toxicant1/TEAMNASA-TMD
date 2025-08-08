@@ -40,7 +40,7 @@ module.exports = {
     AUTO_REPLY: process.env.AUTO_REPLY || "no",
 
     AUTO_STATUS_TEXT: process.env.AUTO_STATUS_TEXT || "🛰️ Diagnostics Completed by 『Ｔｅａｍ ＮＡＳＡ』",
-    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "yes",
+    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "no",
     AUDIO_REPLY: process.env.AUDIO_REPLY || "yes",
     AUTO_BIO: process.env.AUTO_BIO || "yes",
     CHAT_BOT: process.env.CHAT_BOT || "no",
