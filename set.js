@@ -11,9 +11,31 @@ if (fs.existsSync('set.env')) {
 const databasePath = path.join(__dirname, './database.db');
 const DATABASE_URL = process.env.DATABASE_URL || databasePath;
 
+// ROTATING PRESENCE STATUS
+global.TEAM_NASA_PRESENCE_LINES = [
+    "⚙️ Initializing Neural Threads...",
+    "🔬 Engaging Sequence Encoder...",
+    "💾 Query Logging via NASA Core",
+    "📡 Transmitting Signals...",
+    "🔍 Scanning Chat Frequencies...",
+    "🧠 Brainwave Simulation in Progress...",
+    "⚡ Compiling Smart Response...",
+    "🛰️ Syncing Lunar Node AI...",
+    "🧪 Cybernetic Agent Protocol Active..."
+];
+
+global.getDynamicPresence = (() => {
+    let i = 0;
+    return () => {
+        i = (i + 1) % global.TEAM_NASA_PRESENCE_LINES.length;
+        return global.TEAM_NASA_PRESENCE_LINES[i];
+    };
+})();
+
 module.exports = {
-    session: "TIMNASA-MD;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiY0J0bjFadVpOSzRtdytWUTEybjhxZURWck5Ra2liN3M1SG5BQ1ZCM3hrTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidzFxaDREeGNPbzhVTGhXV1J1aWEzNXNSQWszendVVUlybFNWUmZEVHF6cz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJnUDRqUm5JTC8rVmRNK1FSV0lyVVU5QTRPb094Ny9JSDhvT3hUNmZKeWxrPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJxaTNDeFkzSWs4UEd4bzdGM0d6emdhMFM5ZWRaMkdqQThPZXhqdzR3U2s4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImNMaUJHRFVNOXdTS2pNWEdvQW12SFhaQXoxVUtVMFFNTTh5c2pzcU41RlE9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjJaZVhucG0wMkNRZkxzNU9CUk81TTh6Ty9QekFVRmxLTTNIVWFVREhVbUE9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia1BqVGdjY2lUQng1ZDc2dmhHOXI1WnZIcVp2ZU5WZ0s1eVRCV0RpYUZGZz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaGRtSDFqajU3cGh4eTQwblBNL1JVUHVJU0Q3UE4vMlNqKyticjlGbjZ5TT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InVXaTdwdzNObUZHaHNGWjdFMnVweGxFeUVTNE1aZ0RGWWsvcWxBdVl2bEhJV1BqTmtGajFTc01sV1pVQk8vdzlIOTEwUmVRcVhBUHBHWG84MTczRER3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NjcsImFkdlNlY3JldEtleSI6IjlhS0wzQ0Z6b295NGpRelZjUXlmTksrdTk5bnBSZm9rL21jR2F4YzI0dXc9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJyZWdpc3RlcmVkIjp0cnVlLCJwYWlyaW5nQ29kZSI6Ilg1UUdKM1pYIiwibWUiOnsiaWQiOiIyNTQ3NDE4MTk1ODI6MjlAcy53aGF0c2FwcC5uZXQiLCJuYW1lIjoi8J2VtPCdlpjwnZaN8J2WhvCdlpbwnZW08J2Wh/CdlpfwnZaG8J2WjfCdlo7wnZaSIiwibGlkIjoiODAxNzQ3NTg1NDc1NjY6MjlAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNMU3NtVW9RdTlQUnhBWVlBaUFBS0FBPSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJPTGV1Vy9EclZMUEtGNEd4WjFFN2VRV2xxRjlxZmNZQ2hBeGZRMnNtb1JjPSIsImFjY291bnRTaWduYXR1cmUiOiJlWnhxc2lTdVRtVEcwZzlKandjbnlSWG02d0ZYRlUyUlY0UXlhL0t4UUd6MnVCZm1pRkRKN2gxUVV4blZ0N0NnZnVUMUlzWDdqcE11UDV6eG5nSXJEQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoic0taU2JHQW8vUlpXRjV2Q3hFbEtBeU50ZURhR05VM0c3Sk5qVXZVMkpxTFdkUmdDSDlmVDljWW5ZdElFUTRXVGdkUkdkSVVqcHNKbVhWSnRXQXRoRGc9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyNTQ3NDE4MTk1ODI6MjlAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCVGkzcmx2dzYxU3p5aGVCc1dkUk8za0ZwYWhmYW4zR0FvUU1YME5ySnFFWCJ9fV0sInBsYXRmb3JtIjoic21iYSIsInJvdXRpbmdJbmZvIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ0EwSUNBPT0ifSwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzU0NTU2ODczLCJsYXN0UHJvcEhhc2giOiJQV2s1QiIsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBQ2E4In0=",
-module.exports = {
+    // Session ID
+    session: "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiY0J0bjFadVpOSzRtdytWUTEybjhxZURWck5Ra2liN3M1SG5BQ1ZCM3hrTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoidzFxaDREeGNPbzhVTGhXV1J1aWEzNXNSQWszendVVUlybFNWUmZEVHF6cz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJnUDRqUm5JTC8rVmRNK1FSV0lyVVU5QTRPb094Ny9JSDhvT3hUNmZKeWxrPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJxaTNDeFkzSWs4UEd4bzdGM0d6emdhMFM5ZWRaMkdqQThPZXhqdzR3U2s4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImNMaUJHRFVNOXdTS2pNWEdvQW12SFhaQXoxVUtVMFFNTTh5c2pzcU41RlE9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjJaZVhucG0wMkNRZkxzNU9CUk81TTh6Ty9QekFVRmxLTTNIVWFVREhVbUE9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia1BqVGdjY2lUQng1ZDc2dmhHOXI1WnZIcVp2ZU5WZ0s1eVRCV0RpYUZGZz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaGRtSDFqajU3cGh4eTQwblBNL1JVUHVJU0Q3UE4vMlNqKyticjlGbjZ5TT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InVXaTdwdzNObUZHaHNGWjdFMnVweGxFeUVTNE1aZ0RGWWsvcWxBdVl2bEhJV1BqTmtGajFTc01sV1pVQk8vdzlIOTEwUmVRcVhBUHBHWG84MTczRER3PT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6NjcsImFkdlNlY3JldEtleSI6IjlhS0wzQ0Z6b295NGpRelZjUXlmTksrdTk5bnBSZm9rL21jR2F4YzI0dXc9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJyZWdpc3RlcmVkIjp0cnVlLCJwYWlyaW5nQ29kZSI6Ilg1UUdKM1pYIiwibWUiOnsiaWQiOiIyNTQ3NDE4MTk1ODI6MjlAcy53aGF0c2FwcC5uZXQiLCJuYW1lIjoi8J2VtPCdlpjwnZaN8J2WhvCdlpbwnZW08J2Wh/CdlpfwnZaG8J2WjfCdlo7wnZaSIiwibGlkIjoiODAxNzQ3NTg1NDc1NjY6MjlAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNMU3NtVW9RdTlQUnhBWVlBaUFBS0FBPSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJPTGV1Vy9EclZMUEtGNEd4WjFFN2VRV2xxRjlxZmNZQ2hBeGZRMnNtb1JjPSIsImFjY291bnRTaWduYXR1cmUiOiJlWnhxc2lTdVRtVEcwZzlKandjbnlSWG02d0ZYRlUyUlY0UXlhL0t4UUd6MnVCZm1pRkRKN2gxUVV4blZ0N0NnZnVUMUlzWDdqcE11UDV6eG5nSXJEQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoic0taU2JHQW8vUlpXRjV2Q3hFbEtBeU50ZURhR05VM0c3Sk5qVXZVMkpxTFdkUmdDSDlmVDljWW5ZdElFUTRXVGdkUkdkSVVqcHNKbVhWSnRXQXRoRGc9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyNTQ3NDE4MTk1ODI6MjlAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCVGkzcmx2dzYxU3p5aGVCc1dkUk8za0ZwYWhmYW4zR0FvUU1YME5ySnFFWCJ9fV0sInBsYXRmb3JtIjoic21iYSIsInJvdXRpbmdJbmZvIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ0EwSUNBPT0ifSwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzU0NTU2ODczLCJsYXN0UHJvcEhhc2giOiJQV2s1QiIsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBQ2E4In0=",
+
     // BOT CONFIGURATION
     PREFIXE: process.env.PREFIX || ".",
     GITHUB: process.env.GITHUB || 'https://files.catbox.moe/xtkghn.jpg',
@@ -52,37 +74,15 @@ module.exports = {
     LUCKY_ADM: process.env.ANTI_DELETE_MESSAGE || "yes",
 
     // Customized Presence Indicator
-    ETAT: process.env.PRESENCE || "1", // 👇 Refer below for implementation
+    ETAT: process.env.PRESENCE || "1",
 
-    // DATABASE
+    // Database
     DATABASE_URL,
     DATABASE:
         DATABASE_URL === databasePath
             ? "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9"
-            : "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9",
+            : "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9"
 };
-
-// ROTATING PRESENCE STATUS FOR TYPING / RECORDING SIMULATION
-global.TEAM_NASA_PRESENCE_LINES = [
-    "⚙️ Initializing Neural Threads...",
-    "🔬 Engaging Sequence Encoder...",
-    "💾 Query Logging via NASA Core",
-    "📡 Transmitting Signals...",
-    "🔍 Scanning Chat Frequencies...",
-    "🧠 Brainwave Simulation in Progress...",
-    "⚡ Compiling Smart Response...",
-    "🛰️ Syncing Lunar Node AI...",
-    "🧪 Cybernetic Agent Protocol Active..."
-];
-
-// Add this in your message handler presence function:
-global.getDynamicPresence = (() => {
-    let i = 0;
-    return () => {
-        i = (i + 1) % global.TEAM_NASA_PRESENCE_LINES.length;
-        return global.TEAM_NASA_PRESENCE_LINES[i];
-    };
-})();
 
 // Auto reload on changes
 let fichier = require.resolve(__filename);
