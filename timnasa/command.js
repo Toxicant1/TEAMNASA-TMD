@@ -1,70 +1,73 @@
-// Define an array to hold commands
-var commands = [];
+const fs = require('fs');
+const path = require('path');
 
-// Command registration function
-function registerCommand(commandObject, functionHandler) {
-  // Set default values for the command
-  commandObject.function = functionHandler;
-  if (!commandObject.dontAddCommandList) {
-    commandObject.dontAddCommandList = false;  // Default to not skipping the command list
+// Reference to your main command registration system
+const { cmd } = require('../commands'); // Adjust path if needed
+
+cmd(
+  {
+    pattern: '🫰',
+    desc: 'TEAMNASA full menu – includes video intro & audio',
+    category: 'system',
+    filename: __filename
+  },
+  async ({ client, message }) => {
+    // Step 1: Send Intro Video
+    await client.sendMessage(message.jid, {
+      video: { url: './media/Readme.mp4' },
+      gifPlayback: true,
+      caption: '🎬 _Welcome to TEAMNASA-TMD_\n_Enjoy this short intro_...'
+    });
+
+    await new Promise((resolve) => setTimeout(resolve, 5000)); // Wait 5 seconds
+
+    // Step 2: Send Background Audio
+    await client.sendMessage(message.jid, {
+      audio: { url: './media/X-GALACTICO(256k).mp3' },
+      mimetype: 'audio/mp4',
+      ptt: true
+    });
+
+    // Step 3: Generate Dynamic Menu from All Registered Commands
+    const { commands } = require('../commands'); // Adjust path if needed
+    const menuText = generateTeamNasaMenu(commands);
+
+    // Step 4: Send Formatted Menu
+    await client.sendMessage(message.jid, { text: menuText });
   }
-  if (!commandObject.desc) {
-    commandObject.desc = '';  // Default description to empty string
-  }
-  if (!commandObject.fromMe) {
-    commandObject.fromMe = false;  // Default to not being from the current user
-  }
-  if (!commandObject.category) {
-    commandObject.category = "misc";  // Default category to 'misc'
-  }
-  if (!commandObject.filename) {
-    commandObject.filename = "Not Provided";  // Default filename
+);
+
+// ✅ Menu Generator Function
+function generateTeamNasaMenu(commandsArray) {
+  const grouped = {};
+
+  // Group commands by category
+  for (const cmd of commandsArray) {
+    const category = (cmd.category || 'misc').toUpperCase();
+    if (!grouped[category]) grouped[category] = [];
+    grouped[category].push(cmd);
   }
 
-  // Add the command to the command list
-  commands.push(commandObject);
-  return commandObject;  // Return the command object
-}
+  // Format Header
+  let menu = `╔══════════════ ⬣\n`;
+  menu += `║  🛸 *TEAMNASA-TMD MAIN MENU* 🔭\n`;
+  menu += `╚══════════════ ⬣\n\n`;
 
-// Create a command registry
-var commandRegistry = {
-  cmd: registerCommand,
-  AddCommand: registerCommand
-};
-
-// Export the registry to be used in other parts of the application
-module.exports = commandRegistry;
-
-// Function to simulate code execution or break loops (potentially for debugging or anti-debugging)
-function simulateExecution(input) {
-  function infiniteLoop(counter) {
-    if (typeof counter === "string") {
-      // This seems like a way to create a side effect, using a function constructor to run code.
-      (new Function("while (true) {}")).apply("counter");
-    } else {
-      if (('' + counter / counter).length !== 1 || counter % 20 === 0) {
-        (new Function("debugger")).call("action");
-      } else {
-        (new Function("debugger")).apply("stateObject");
-      }
+  // Format Each Category
+  for (const [category, cmds] of Object.entries(grouped)) {
+    menu += `🔰 *${category}*\n`;
+    menu += `══════════════════════════════\n`;
+    for (const cmd of cmds) {
+      const cmdText = cmd.pattern ? `.${cmd.pattern}` : '';
+      const desc = cmd.desc || '';
+      menu += `👉 *${cmdText.padEnd(14)}* ➤ ${desc}\n`;
     }
-    infiniteLoop(++counter);
+    menu += `──────────────────────────────\n\n`;
   }
 
-  try {
-    if (input) {
-      infiniteLoop(0);  // Potentially used for forcing execution or debugging
-    } else {
-      infiniteLoop(1);  // Run without input if not provided
-    }
-  } catch (error) {
-    // Handle any potential errors
-    console.error(error);
-  }
-}
+  // Footer
+  menu += `🔵 _Bot Powered by TEAMNASA-TMD_\n`;
+  menu += `📅 ${new Date().toLocaleDateString()}`;
 
-// Additional command function (not fully used in the code, but may be part of future features)
-function executeCommand() {
-  // Logic for executing a command goes here (simplified)
-  console.log("Command executed");
+  return menu;
 }
